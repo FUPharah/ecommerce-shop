@@ -11,7 +11,7 @@ const HomePage = async () => {
   const products = await getProducts({
     isFeatured: true
   });
-  const billboard = await getBillboard("7255fc16-ddc0-4327-b79d-5b6bc35456ae")
+  const billboard = await getBillboard("caae564a-c031-43cc-b789-0565a6c98e42");
   return (
     <div>
       <Container>
