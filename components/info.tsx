@@ -1,6 +1,6 @@
 import { Product } from "@/types";
 import Currency from "./ui/currency";
-import Button from "./ui/button";
+import Button from "./ui/button1";
 import { ShoppingCart } from "lucide-react";
 
 interface InfoProps {

@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import { Colour, Size } from "@/types";
-import Button from "@/components/ui/button";
+import Button1 from "@/components/ui/button1";
 import { PlusSquare, X } from "lucide-react";
 import { Dialog } from "@headlessui/react";
 import IconButton from "@/components/ui/icon-button";
@@ -21,10 +21,10 @@ const MobileFilters: React.FC<MobileFiltersProps> = ({
   const onClose = () => setOpen(false);
   return (
     <>
-      <Button onClick={onOpen} className="flex items-center gap-x-2 lg:hidden">
+      <Button1 onClick={onOpen} className="flex items-center gap-x-2 lg:hidden">
         Filters
         <PlusSquare size={20} />
-      </Button>
+      </Button1>
       <Dialog open={open} as="div" className="relative z-40 lg:hidden" onClose={onClose}>
         <div className="fixed inset-0 bg-black bg-opacity-25"/>
         <div className="fixed inset-0 z-40 flex">

@@ -3,6 +3,7 @@ import Container from "./ui/container";
 import MainNav from "./main-nav";
 import getCategories from "@/actions/get-categories";
 import NavbarActions from "./navbar-actions";
+import { ModeToggle } from "./ui/mode-toggle";
 
 export const revalidate = 0;
 
@@ -19,6 +20,9 @@ const Navbar = async () => {
           </Link>
           <MainNav data={categories} />
           <NavbarActions />
+          <div className="ml-10">
+            <ModeToggle />
+          </div>
         </div>
       </Container>
     </div>

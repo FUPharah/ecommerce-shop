@@ -1,7 +1,7 @@
 "use client"
 
 import React from "react";
-import Button from "@/components/ui/button";
+import Button1 from "@/components/ui/button1";
 import { cn } from "@/lib/utils";
 import { Size, Colour } from "@/types";
 import { useSearchParams } from "next/navigation";
@@ -49,11 +49,11 @@ const Filter: React.FC<FilterProps> = ({
       <div className="flex flex-wrap gap-2">
         {data.map((filter) => (
           <div key={filter.id} className="flex items-center">
-            <Button className={cn(`rounded-lg text-black text-sm p-2 bg-white border
+            <Button1 className={cn(`rounded-lg text-black text-sm p-2 bg-white border
           border-black`, selectedValue === filter.id && "bg-black text-white")}
             onClick={() => onClick(filter.id)}>
               {valueKey === 'sizeId' ? filter.value : filter.name}
-            </Button>
+            </Button1>
           </div>
         ))}
       </div>
