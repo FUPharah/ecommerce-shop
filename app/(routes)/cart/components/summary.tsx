@@ -48,7 +48,7 @@ const Summary = () => {
           <Currency value={totalPrice}/>
         </div>
       </div>
-      <Button onClick={onCheckout} className="mt-6 w-full">
+      <Button disabled={items.length === 0} onClick={onCheckout} className="mt-6 w-full">
         <span className="text-sky-500">Checkout</span>
       </Button>
     </div>
