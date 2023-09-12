@@ -10,7 +10,7 @@ import { ThemeProvider } from '@/providers/theme-provider'
 const font = Urbanist({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Store',
+  title: 'Store UI',
   description: 'A store for all your needs',
 }
 
