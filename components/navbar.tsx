@@ -12,16 +12,16 @@ const Navbar = async () => {
   return (
     <div className="border-b">
       <Container>
-        <div className="relative px-4 sm:px-6 lg:px-8 flex h-16 items-center">
-          <Link href="/" className="ml-4 flex lg:ml-0 gap-x-2">
-            <p className="font-bold text-xl">
-              Store
+        <div className="px-4 sm:px-6 lg:px-8 h-16 items-center flex ">
+          <Link href="/" className="ml-4 lg:ml-0 gap-x-2   ">
+            <p className="font-bold text-xl mr-10">
+              E-Commerce
             </p>
           </Link>
           <MainNav data={categories} />
           <NavbarActions />
           <div className="ml-10">
-            <ModeToggle />
+            <ModeToggle />  
           </div>
         </div>
       </Container>
