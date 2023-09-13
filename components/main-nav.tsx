@@ -23,8 +23,8 @@ const MainNav: React.FC<MainNavProps> = ({
     <nav className="mx-6 flex items-center space-x lg:space-x-6">
       {routes.map((route) => (
         <Link key={route.href} href={route.href} className={cn(
-          "text-sm font-medium transition-colors hover:text-black",
-          route.active ? "text-black" : "text-gray-500"
+          "text-lg font-bold transition-colors hover:text-lime-500",
+          route.active ? "text-rose-600" : ""
         )}>
           {route.label}
         </Link>
